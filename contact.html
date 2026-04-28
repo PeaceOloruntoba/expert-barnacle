@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Loba Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/lucide-static/font/lucide.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header id="site-header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo" aria-label="Loba Consulting Home">
+                <span class="logo-mark">L</span>
+                <span class="logo-text">Loba Consulting</span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" role="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="All services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pricing.html">Pricing</a></li>                <li><a href="quote.html">Get a Quote</a></li>                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="https://wa.me/qr/NOG2LSMOM3A3O1" class="nav-cta" target="_blank" rel="noopener">
+                <i class="icon-message-circle"></i> Book Now
+            </a>
+        </nav>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="nav-overlay" aria-hidden="true"></div>
+
+    <!-- Back Button -->
+    <a href="All services.html" class="back-button" style="position: fixed; top: calc(var(--nav-height) + 1rem); left: 1rem; z-index: 1000; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1rem; background: #fff; color: #1f2937; text-decoration: none; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); font-weight: 500; transition: all 0.2s ease;">
+        <i class="icon-arrow-left" style="width: 18px; height: 18px;"></i>
+    </a>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact" style="padding-top: calc(var(--nav-height) + 3rem);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2>Contact Us</h2>
+                <div class="section-divider"></div>
+                <p class="section-sub">We typically respond within a few hours.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-box">
+                    <h3>Reach Us Directly</h3>
+                    <a href="https://wa.me/qr/NOG2LSMOM3A3O1" class="whatsapp-cta" target="_blank" rel="noopener">
+                        <i class="icon-message-circle"></i>
+                        <span>
+                            <strong>Chat on WhatsApp</strong>
+                            <small>Fastest response</small>
+                        </span>
+                    </a>
+                     <a href="https://www.instagram.com/lobascholarly/" class="whatsapp-cta instagram-cta" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>
+                            <strong>Connect with us on Instagram</strong>
+                            <small>Fastest response</small>
+                        </span>
+                    </a>
+                    <a href="mailto:lobaconsulting2@gmail.com" class="whatsapp-cta email-cta" rel="noopener">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>
+                            <strong>Email Us</strong>
+                            <small>lobaconsulting2@gmail.com</small>
+                        </span>
+                    </a>
+                    <a href="tel:08085847676" class="whatsapp-cta phone-cta" rel="noopener">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>
+                            <strong>Call Us</strong>
+                            <small>08085847676</small>
+                        </span>
+                    </a>
+                </div>
+                <div class="contact-form-box">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="service_type">Service Interested In</label>
+                            <select id="service_type" name="service_type">
+                                <option value="">Select a service</option>
+                                <option value="project-writing">Final Year Project Writing</option>
+                                <option value="research-thesis">Research & Thesis Writing</option>
+                                <option value="business-proposal">Business Proposal Writing</option>
+                                <option value="cv-cover-letter">CV & Cover Letter Writing</option>
+                                <option value="editing-proofreading">Editing & Proofreading</option>
+                                <option value="data-analysis">Data Analysis</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required rows="5" placeholder="Tell us about your project or inquiry..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">Sending...</span>
+                        </button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+                <div class="payment-details contact-payment">
+                    <div class="payment-details-header">
+                        <i class="icon-landmark"></i>
+                        <h4>Official Payment Details</h4>
+                    </div>
+                    <div class="payment-info-grid">
+                        <div class="payment-info-row">
+                            <span class="payment-label">Bank</span>
+                            <span class="payment-value">Wema Bank</span>
+                        </div>
+                        <div class="payment-info-row">
+                            <span class="payment-label">Account Name</span>
+                            <span class="payment-value">Ogunleye Oluwatobiloba</span>
+                        </div>
+                        <div class="payment-info-row">
+                            <span class="payment-label">Account Number</span>
+                            <span class="payment-value payment-value--mono">0419945604</span>
+                        </div>
+                    </div>
+                    <p class="payment-note">
+                        <i class="icon-globe"></i>
+                        <strong>International clients</strong> — please contact us directly for approved payment methods.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo logo--light" aria-label="Loba Consulting Home">
+                        <span class="logo-mark">L</span>
+                        <span class="logo-text">Loba Consulting</span>
+                    </a>
+                    <p>Expert academic writing and consulting services to help students and professionals succeed.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h5>Services</h5>
+                        <ul>
+                            <li><a href="undergraduate-projects.html">Undergraduate Projects</a></li>
+                            <li><a href="thesis-dissertations.html">Thesis & Dissertations</a></li>
+                            <li><a href="data-analysis.html">Data Analysis</a></li>
+                            <li><a href="business-proposals.html">Business Proposals</a></li>
+                            <li><a href="cv-cover-letters.html">CV & Cover Letters</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Company</h5>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Contact</h5>
+                        <ul>
+                            <li><a href="mailto:lobaconsulting2@gmail.com">lobaconsulting2@gmail.com</a></li>
+                        <li><a href="https://www.instagram.com/lobascholarly/" target="_blank" rel="noopener">Instagram</a></li>
+                            <li><a href="tel:08085847676">08085847676</a></li>
+                            <li><a href="https://wa.me/qr/NOG2LSMOM3A3O1" target="_blank" rel="noopener">WhatsApp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Loba Consulting. All rights reserved.</p>
+                <p class="footer-tagline">Excellence in Academic Support</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/qr/NOG2LSMOM3A3O1" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <img src="https://cdn.jsdelivr.net/npm/lucide-static/icons/message-circle.svg" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
